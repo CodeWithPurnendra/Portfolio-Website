@@ -1,0 +1,549 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: rgba(0, 0, 139, 0.877);
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 73px;
+    margin-top: 20px;
+    position: sticky;
+}
+
+ul a {
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+
+.pulse-animation a:hover {
+    color: #1abc9c;
+    animation: pulse 1s infinite;
+    text-shadow: 0 0 5px rgba(26, 188, 156, 0.7);
+}
+
+@keyframes pulse {
+    0% {
+
+        text-shadow: 0 0 5px rgba(26, 188, 156, 0.7);
+    }
+
+    50% {
+        text-shadow: 0 0 15px rgba(26, 188, 156, 0.9);
+    }
+
+    100% {
+        text-shadow: 0 0 5px rgba(26, 188, 156, 0.7);
+    }
+}
+
+.hero-section {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content {
+    color: whitesmoke;
+    margin-top: 90px;
+    margin-left: 120px;
+    line-height: 30px;
+}
+
+.icons {
+
+    display: flex;
+    gap: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.icon-link{
+text-decoration: none;
+transition: all 0.3s ease;
+opacity: 0;
+animation: fadeInUp 0.8s ease forwards;
+  color: #ccc;
+}
+.icon-1:hover {
+    color: rgb(0, 0, 255);
+    transform: scale(1.2);
+    transition: all 0.3s;
+    animation-delay: 1.2s;
+}
+
+.icon-2:hover {
+    color: rgb(255, 0, 221);
+    transform: scale(1.2);
+    transition: all 0.3s;
+    animation-delay: 1.3s;
+}
+
+.icon-3:hover {
+    color: rgb(0, 247, 255);
+    transform: scale(1.2);
+    transition: all 0.3s;
+    animation-delay: 1.4s;
+}
+
+.icon-4:hover {
+    color: rgba(255, 0, 0, 0.836);
+    transform: scale(1.2);
+    transition: all 0.3s;
+    animation-delay: 1.5s;
+}
+
+span {
+
+    background: linear-gradient(to left, #7801f7, #2575fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+
+    color: rgba(255, 255, 255, 0.658);
+    font-size: 14px;
+}
+
+.intro-text{
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: slideInLeft 0.8s ease 0.2s forwards;
+}
+
+ .name{
+  
+   font-size: 2.3rem;
+   margin-bottom: 15px;
+   opacity: 0;
+  animation: slideInLeft 0.8s ease 0.4s forwards;
+ }
+
+ .title{
+    font-size: 1.7rem;
+    color: #333;
+    margin-bottom: 20px;
+    opacity: 0;
+   animation: slideInLeft 0.8s ease 0.6s forwards;
+ }
+
+ .typing-text{
+
+     color: #b21f1f;
+     position: relative;
+ }
+
+ .typing-text::after{
+     content: '|';
+     position: absolute;
+     right: -5px;
+     animation: blink 1s infinite;
+ }
+
+ .discription{
+
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    opacity: 0;
+    animation: slideInLeft 0.8s ease 0.8s forwards;
+ }
+
+ .call-to-action{
+
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    animation: slideInLeft 0.8 ease forwards;
+ }
+.btn a {
+    text-decoration: none;
+
+}
+
+button {
+    background-image: linear-gradient(to left, rgba(102, 16, 240, 0.842), rgba(0, 0, 255, 0.719));
+    border-radius: 5px;
+    margin-top: 20px;
+    max-width: 100%;
+    min-width: 140px;
+    font-size: 12px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.project-btn{
+    animation-delay: 1.6s;
+}
+
+.contact-btn{
+    animation-delay: 1.7s;
+}
+
+.project-btn:hover{
+    background: #2a3a8c;
+}
+
+.contact-btn:hover{
+    background: #c22f2f;
+}
+button a {
+
+    color: whitesmoke;
+}
+
+button a:hover {
+
+    color: rgb(255, 20, 145);
+    text-decoration: underline;
+    text-decoration-color: #dee3eb;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+ @keyframes slideInLeft {
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+ }
+
+ @keyframes slideInRight {
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+ }
+
+ @keyframes fadeInUp {
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+ }
+
+ @keyframes float {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+ }
+
+ @keyframes blink {
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+ }
+.image {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 144px;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    animation: fadeIn 0.9s ease 0.5s forwards;
+}
+
+.image img {
+
+    height: 58vh;
+    width: 43vw;
+}
+
+@keyframes fadeIn  {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.footer {
+    color: #fff;
+    padding: 60px 40px 30px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 1.1rem;
+    color: #ccc;
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.footer-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #555, transparent);
+    margin: 40px 0;
+}
+
+.email-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.email-input {
+    background: transparent;
+    border: none;
+    border: 1px solid #555;
+    border-radius: 9px;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 10px 0;
+    width: 300px;
+    margin-right: 15px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.email-input:focus {
+    border-bottom-color: #fff;
+}
+
+.email-input::placeholder {
+    color: #888;
+    text-align: center;
+}
+
+.join {
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+    transition: color 0.3;
+}
+
+.join:hover {
+    color: #ccc;
+}
+
+.footer-button {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    color: #888;
+    letter-spacing: 1px;
+}
+
+.skills>h1 {
+
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    animation: fadeInDown 1s ease forwards;
+}
+
+.my-skills {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.card {
+
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.card:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.card:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.card:nth-child(6) {
+    animation-delay: 1.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    display: inline-block;
+    transition: tranform 0.3s ease;
+}
+
+.card:hover .icon {
+
+    transform: scale(1) rotate(5deg);
+}
+
+h3 {
+    color: #1a2a6c;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.card>p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.skill-bar {
+
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+.skill-level {
+
+    height: 100%;
+    background: linear-gradient(90deg, #1a2a6c, #b21f1f);
+    border-radius: 4px;
+    width: 0;
+    animation: fillbar 1.5s ease 1.5s forwards;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fillbar {
+    from {
+        width: 0;
+    }
+
+    to {
+
+        width: var(--skill-level);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .my-skills {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
